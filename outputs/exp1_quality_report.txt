@@ -1,0 +1,14 @@
+=== 数据质量检查报告 ===
+1. 数据总条数: 3 条
+2. 包含的景区: 故宫
+3. 数据来源分布:
+source_type
+travelogue    2
+official      1
+4. 缺失值检查:
+doc_id         0
+scenic_area    0
+source_type    0
+raw_text       0
+clean_text     0
+5. 重复记录检查: 发现 0 条完全重复的记录

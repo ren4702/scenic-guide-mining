@@ -1,0 +1,44 @@
+[
+  {
+    "doc_id": "doc_travelogue_01",
+    "sentence_id": 2,
+    "pronoun": "它",
+    "position_in_sentence": 0,
+    "sentence_text": "它非常大，我们在那里逛了一天。"
+  },
+  {
+    "doc_id": "doc_travelogue_01",
+    "sentence_id": 2,
+    "pronoun": "那里",
+    "position_in_sentence": 8,
+    "sentence_text": "它非常大，我们在那里逛了一天。"
+  },
+  {
+    "doc_id": "doc_travelogue_01",
+    "sentence_id": 2,
+    "pronoun": "那",
+    "position_in_sentence": 8,
+    "sentence_text": "它非常大，我们在那里逛了一天。"
+  },
+  {
+    "doc_id": "doc_travelogue_01",
+    "sentence_id": 3,
+    "pronoun": "那里",
+    "position_in_sentence": 8,
+    "sentence_text": "下午去了珍宝馆，那里有很多宝贝。"
+  },
+  {
+    "doc_id": "doc_travelogue_01",
+    "sentence_id": 3,
+    "pronoun": "那",
+    "position_in_sentence": 8,
+    "sentence_text": "下午去了珍宝馆，那里有很多宝贝。"
+  },
+  {
+    "doc_id": "doc_travelogue_01",
+    "sentence_id": 4,
+    "pronoun": "它",
+    "position_in_sentence": 16,
+    "sentence_text": "最后我们从神武门出去，大家都觉得它很壮观。"
+  }
+]

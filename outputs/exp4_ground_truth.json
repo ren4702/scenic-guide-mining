@@ -1,0 +1,22 @@
+[
+  {
+    "sentence_id": 2,
+    "pronoun": "它",
+    "true_referent": "故宫"
+  },
+  {
+    "sentence_id": 2,
+    "pronoun": "那里",
+    "true_referent": "故宫"
+  },
+  {
+    "sentence_id": 3,
+    "pronoun": "那里",
+    "true_referent": "珍宝馆"
+  },
+  {
+    "sentence_id": 4,
+    "pronoun": "它",
+    "true_referent": "神武门"
+  }
+]
