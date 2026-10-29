@@ -1,0 +1,38 @@
+[
+  {
+    "entity": "午门",
+    "type": "POI",
+    "doc_id": "doc_001",
+    "scenic_area": "故宫"
+  },
+  {
+    "entity": "太和殿",
+    "type": "POI",
+    "doc_id": "doc_001",
+    "scenic_area": "故宫"
+  },
+  {
+    "entity": "保和殿",
+    "type": "POI",
+    "doc_id": "doc_001",
+    "scenic_area": "故宫"
+  },
+  {
+    "entity": "乾清宫",
+    "type": "POI",
+    "doc_id": "doc_001",
+    "scenic_area": "故宫"
+  },
+  {
+    "entity": "下午4点",
+    "type": "TIME",
+    "doc_id": "doc_001",
+    "scenic_area": "故宫"
+  },
+  {
+    "entity": "故宫",
+    "type": "POI",
+    "doc_id": "doc_002",
+    "scenic_area": "故宫"
+  }
+]
