@@ -33,8 +33,8 @@ prompt = """
 results = []
 print("开始调用 DeepSeek 进行实体识别...\n")
 
-# 这里我们只测试前 2 条数据，避免一次消耗太多额度
-for index, row in df.head(2).iterrows():
+
+for index, row in df.iterrows():
     text = row['clean_text']
     print(f"正在分析第 {index+1} 条文本...")
     

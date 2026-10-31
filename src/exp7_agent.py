@@ -9,32 +9,44 @@ client = OpenAI(
     base_url="https://api.deepseek.com"
 )
 
-# 确保 outputs 文件夹存在
 os.makedirs("outputs", exist_ok=True)
 
 # ================= 1. 知识图谱查询工具 =================
 def query_knowledge_graph(scenic_area, visitor_type):
-    # (此处省略工具代码，与之前完全一致，为了节省篇幅，你直接复制原来的即可)
-    # ... 为了确保你能直接跑，我把之前的完整代码放这里 ...
     print(f"  [工具调用] 正在查询图谱：景区={scenic_area}, 游客类型={visitor_type}")
+    
     try:
         with open("outputs/exp5_condition_mapping.json", "r", encoding="utf-8") as f:
             cond_data = json.load(f)
-    except:
+    except Exception:
         cond_data = []
+        
     try:
         with open("outputs/exp3_structured_route.json", "r", encoding="utf-8") as f:
-            route_data = json.load(f)
-    except:
-        route_data = {}
+            all_routes = json.load(f)
+    except Exception:
+        all_routes = {}
+
+    target_route = all_routes.get(scenic_area, all_routes.get("故宫", {}))
 
     matched_suggestions = []
     for item in cond_data:
-        if visitor_type in item["condition_text"] or item["visitor_type"] == "通用" or visitor_type in item["visitor_type"]:
-            matched_suggestions.append(item["suggestion_text"])
+        # 【核心修复】1. 必须是指定景区的，或者完全通用的
+        # 2. 条件或建议中必须命中用户的游客类型（或完全通用）
+        is_same_scenic = (item.get("scenic_area") == scenic_area)
+        is_visitor_match = (visitor_type in item.get("condition_text", "") or 
+                            visitor_type in item.get("suggestion_text", "") or 
+                            item.get("visitor_type") == "通用")
+        
+        if is_same_scenic and is_visitor_match:
+            matched_suggestions.append(item.get("suggestion_text", ""))
+
+    # 去重并截取前 3 条最核心的建议
+    matched_suggestions = list(set(matched_suggestions))[:3]
 
     result = {
-        "route": route_data,
+        "selected_scenic_area": scenic_area,
+        "route": target_route,
         "suggestions": matched_suggestions
     }
     return json.dumps(result, ensure_ascii=False)
@@ -43,7 +55,6 @@ def query_knowledge_graph(scenic_area, visitor_type):
 def run_agent(user_query, task_id):
     print(f"\n[{task_id}] 用户输入: {user_query}")
     
-    # 记录整个流程的结构化数据
     trace_record = {
         "task_id": task_id,
         "user_query": user_query,
@@ -100,30 +111,29 @@ def run_agent(user_query, task_id):
     final_answer = response2.choices[0].message.content
     trace_record["final_answer"] = final_answer
     print("\n=== 最终旅游规划方案 ===")
-    print(final_answer)
+    print(final_answer[:150] + "......\n(完整内容见输出文件)")
     
     return trace_record
 
 # ================= 3. 功能测试与成果输出 =================
 if __name__ == "__main__":
-    # 测试场景集合
+    # 覆盖 3 个景区的测试场景
     test_queries = [
-        ("测试场景1（老人）", "我想带爷爷奶奶去故宫玩一天，怎么安排比较好？"),
-        ("测试场景2（亲子避雨）", "下雨天带孩子去故宫，有什么推荐的游览路线吗？"),
-        ("测试场景3（通用）", "我一个人去故宫，只有半天时间，怎么逛？")
+        ("测试场景1（故宫-老人）", "我想带爷爷奶奶去故宫玩一天，怎么安排比较好？"),
+        ("测试场景2（黄山-体力不佳）", "我平时不怎么锻炼，去黄山有什么省力的路线和建议吗？"),
+        ("测试场景3（西湖-下雨）", "下雨天去西湖，怎么逛比较合适？")
     ]
     
     all_traces = []
-    
     for task_id, query in test_queries:
         record = run_agent(query, task_id)
         all_traces.append(record)
 
-    # 1. 保存结构化中间状态（JSON格式）
+    # 保存结构化结果
     with open("outputs/exp7_agent_traces.json", "w", encoding="utf-8") as f:
         json.dump(all_traces, f, ensure_ascii=False, indent=2)
         
-    # 2. 保存可读的证据链（Markdown格式，方便直接贴报告）
+    # 保存 Markdown 证据
     md_content = "# 实验七：Agent 工具调用记录与结果证据\n\n"
     for trace in all_traces:
         md_content += f"## {trace['task_id']}\n"
@@ -139,7 +149,5 @@ if __name__ == "__main__":
 
     print("\n=========================================")
     print("✅ 所有测试已完成！")
-    print("证据已保存至：")
-    print("1. outputs/exp7_agent_traces.json (结构化数据)")
-    print("2. outputs/exp7_agent_evidence.md (用于写报告的直接证据)")
+    print("证据已保存至 outputs/exp7_agent_evidence.md")
     print("=========================================")

@@ -1,38 +1,884 @@
 [
   {
-    "entity": "午门",
+    "entity": "聚锦园",
     "type": "POI",
     "doc_id": "doc_001",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "曲院风荷",
+    "type": "POI",
+    "doc_id": "doc_001",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "雷峰夕照",
+    "type": "POI",
+    "doc_id": "doc_001",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "雷峰塔",
+    "type": "POI",
+    "doc_id": "doc_001",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "平湖秋月",
+    "type": "POI",
+    "doc_id": "doc_001",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "孤山",
+    "type": "POI",
+    "doc_id": "doc_001",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "三潭印月",
+    "type": "POI",
+    "doc_id": "doc_001",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "断桥残雪",
+    "type": "POI",
+    "doc_id": "doc_001",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "花港观鱼",
+    "type": "POI",
+    "doc_id": "doc_001",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "卢园",
+    "type": "POI",
+    "doc_id": "doc_001",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "花家山",
+    "type": "POI",
+    "doc_id": "doc_001",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "双峰插云",
+    "type": "POI",
+    "doc_id": "doc_001",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "坐船",
+    "type": "TRANSPORT",
+    "doc_id": "doc_001",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "春天",
+    "type": "TIME",
+    "doc_id": "doc_001",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "七月份",
+    "type": "TIME",
+    "doc_id": "doc_001",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "傍晚",
+    "type": "TIME",
+    "doc_id": "doc_001",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "五点多钟",
+    "type": "TIME",
+    "doc_id": "doc_001",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "秋天",
+    "type": "TIME",
+    "doc_id": "doc_001",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "中秋",
+    "type": "TIME",
+    "doc_id": "doc_001",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "冬天",
+    "type": "TIME",
+    "doc_id": "doc_001",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "春夏之交",
+    "type": "TIME",
+    "doc_id": "doc_001",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "五六月",
+    "type": "TIME",
+    "doc_id": "doc_001",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "梅雨季",
+    "type": "TIME",
+    "doc_id": "doc_001",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "十月下旬",
+    "type": "TIME",
+    "doc_id": "doc_001",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "十一月初",
+    "type": "TIME",
+    "doc_id": "doc_001",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "早晨五六点钟",
+    "type": "TIME",
+    "doc_id": "doc_001",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "夏天",
+    "type": "TIME",
+    "doc_id": "doc_001",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "清晨",
+    "type": "TIME",
+    "doc_id": "doc_001",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "苏堤",
+    "type": "POI",
+    "doc_id": "doc_002",
+    "scenic_area": "西湖"
+  },
+  {
+    "entity": "花港观鱼",
+    "type": "POI",
+    "doc_id": "doc_002",
+    "scenic_area": "西湖"
+  },
+  {
+    "entity": "雷峰塔",
+    "type": "POI",
+    "doc_id": "doc_002",
+    "scenic_area": "西湖"
+  },
+  {
+    "entity": "雷峰夕照",
+    "type": "POI",
+    "doc_id": "doc_002",
+    "scenic_area": "西湖"
+  },
+  {
+    "entity": "平湖秋月",
+    "type": "POI",
+    "doc_id": "doc_002",
+    "scenic_area": "西湖"
+  },
+  {
+    "entity": "断桥",
+    "type": "POI",
+    "doc_id": "doc_002",
+    "scenic_area": "西湖"
+  },
+  {
+    "entity": "断桥残雪",
+    "type": "POI",
+    "doc_id": "doc_002",
+    "scenic_area": "西湖"
+  },
+  {
+    "entity": "双峰插云",
+    "type": "POI",
+    "doc_id": "doc_002",
+    "scenic_area": "西湖"
+  },
+  {
+    "entity": "南屏晚钟",
+    "type": "POI",
+    "doc_id": "doc_002",
+    "scenic_area": "西湖"
+  },
+  {
+    "entity": "净慈寺",
+    "type": "POI",
+    "doc_id": "doc_002",
+    "scenic_area": "西湖"
+  },
+  {
+    "entity": "曲院风荷",
+    "type": "POI",
+    "doc_id": "doc_002",
+    "scenic_area": "西湖"
+  },
+  {
+    "entity": "三潭印月",
+    "type": "POI",
+    "doc_id": "doc_002",
+    "scenic_area": "西湖"
+  },
+  {
+    "entity": "孤山",
+    "type": "POI",
+    "doc_id": "doc_002",
+    "scenic_area": "西湖"
+  },
+  {
+    "entity": "春天",
+    "type": "TIME",
+    "doc_id": "doc_002",
+    "scenic_area": "西湖"
+  },
+  {
+    "entity": "夏天",
+    "type": "TIME",
+    "doc_id": "doc_002",
+    "scenic_area": "西湖"
+  },
+  {
+    "entity": "秋天",
+    "type": "TIME",
+    "doc_id": "doc_002",
+    "scenic_area": "西湖"
+  },
+  {
+    "entity": "冬天",
+    "type": "TIME",
+    "doc_id": "doc_002",
+    "scenic_area": "西湖"
+  },
+  {
+    "entity": "傍晚",
+    "type": "TIME",
+    "doc_id": "doc_002",
+    "scenic_area": "西湖"
+  },
+  {
+    "entity": "五点多",
+    "type": "TIME",
+    "doc_id": "doc_002",
+    "scenic_area": "西湖"
+  },
+  {
+    "entity": "七月份",
+    "type": "TIME",
+    "doc_id": "doc_002",
+    "scenic_area": "西湖"
+  },
+  {
+    "entity": "中秋",
+    "type": "TIME",
+    "doc_id": "doc_002",
+    "scenic_area": "西湖"
+  },
+  {
+    "entity": "十月下旬",
+    "type": "TIME",
+    "doc_id": "doc_002",
+    "scenic_area": "西湖"
+  },
+  {
+    "entity": "十一月初",
+    "type": "TIME",
+    "doc_id": "doc_002",
+    "scenic_area": "西湖"
+  },
+  {
+    "entity": "早晨五六点钟",
+    "type": "TIME",
+    "doc_id": "doc_002",
+    "scenic_area": "西湖"
+  },
+  {
+    "entity": "新浪BLOG意见反馈留言板",
+    "type": "POI",
+    "doc_id": "doc_003",
+    "scenic_area": "西湖"
+  },
+  {
+    "entity": "芜湖",
+    "type": "POI",
+    "doc_id": "doc_004",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "屯溪",
+    "type": "POI",
+    "doc_id": "doc_004",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "汤口",
+    "type": "POI",
+    "doc_id": "doc_004",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "迎客松",
+    "type": "POI",
+    "doc_id": "doc_004",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "石猴观海",
+    "type": "POI",
+    "doc_id": "doc_004",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "华山",
+    "type": "POI",
+    "doc_id": "doc_004",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "前山",
+    "type": "POI",
+    "doc_id": "doc_004",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "后山",
+    "type": "POI",
+    "doc_id": "doc_004",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "火车",
+    "type": "TRANSPORT",
+    "doc_id": "doc_004",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "飞机",
+    "type": "TRANSPORT",
+    "doc_id": "doc_004",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "班车",
+    "type": "TRANSPORT",
+    "doc_id": "doc_004",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "缆车",
+    "type": "TRANSPORT",
+    "doc_id": "doc_004",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "出租车",
+    "type": "TRANSPORT",
+    "doc_id": "doc_004",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "公交总站",
+    "type": "TRANSPORT",
+    "doc_id": "doc_004",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "端午节前一天晚上",
+    "type": "TIME",
+    "doc_id": "doc_004",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "早六点",
+    "type": "TIME",
+    "doc_id": "doc_004",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "晚六点",
+    "type": "TIME",
+    "doc_id": "doc_004",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "午门",
+    "type": "POI",
+    "doc_id": "doc_005",
     "scenic_area": "故宫"
   },
   {
     "entity": "太和殿",
     "type": "POI",
-    "doc_id": "doc_001",
+    "doc_id": "doc_005",
+    "scenic_area": "故宫"
+  },
+  {
+    "entity": "中和殿",
+    "type": "POI",
+    "doc_id": "doc_005",
     "scenic_area": "故宫"
   },
   {
     "entity": "保和殿",
     "type": "POI",
-    "doc_id": "doc_001",
+    "doc_id": "doc_005",
+    "scenic_area": "故宫"
+  },
+  {
+    "entity": "冰窖餐厅",
+    "type": "POI",
+    "doc_id": "doc_005",
     "scenic_area": "故宫"
   },
   {
     "entity": "乾清宫",
     "type": "POI",
-    "doc_id": "doc_001",
+    "doc_id": "doc_005",
     "scenic_area": "故宫"
   },
   {
-    "entity": "下午4点",
-    "type": "TIME",
-    "doc_id": "doc_001",
-    "scenic_area": "故宫"
-  },
-  {
-    "entity": "故宫",
+    "entity": "交泰殿",
     "type": "POI",
-    "doc_id": "doc_002",
+    "doc_id": "doc_005",
     "scenic_area": "故宫"
+  },
+  {
+    "entity": "神武门",
+    "type": "POI",
+    "doc_id": "doc_005",
+    "scenic_area": "故宫"
+  },
+  {
+    "entity": "上午",
+    "type": "TIME",
+    "doc_id": "doc_005",
+    "scenic_area": "故宫"
+  },
+  {
+    "entity": "中午",
+    "type": "TIME",
+    "doc_id": "doc_005",
+    "scenic_area": "故宫"
+  },
+  {
+    "entity": "下午",
+    "type": "TIME",
+    "doc_id": "doc_005",
+    "scenic_area": "故宫"
+  },
+  {
+    "entity": "上午",
+    "type": "TIME",
+    "doc_id": "doc_006",
+    "scenic_area": "故宫"
+  },
+  {
+    "entity": "东华门",
+    "type": "POI",
+    "doc_id": "doc_006",
+    "scenic_area": "故宫"
+  },
+  {
+    "entity": "步行",
+    "type": "TRANSPORT",
+    "doc_id": "doc_006",
+    "scenic_area": "故宫"
+  },
+  {
+    "entity": "太和殿",
+    "type": "POI",
+    "doc_id": "doc_006",
+    "scenic_area": "故宫"
+  },
+  {
+    "entity": "中午",
+    "type": "TIME",
+    "doc_id": "doc_006",
+    "scenic_area": "故宫"
+  },
+  {
+    "entity": "冰窖餐厅",
+    "type": "POI",
+    "doc_id": "doc_006",
+    "scenic_area": "故宫"
+  },
+  {
+    "entity": "下午",
+    "type": "TIME",
+    "doc_id": "doc_006",
+    "scenic_area": "故宫"
+  },
+  {
+    "entity": "珍宝馆",
+    "type": "POI",
+    "doc_id": "doc_006",
+    "scenic_area": "故宫"
+  },
+  {
+    "entity": "神武门",
+    "type": "POI",
+    "doc_id": "doc_006",
+    "scenic_area": "故宫"
+  },
+  {
+    "entity": "珍宝馆",
+    "type": "POI",
+    "doc_id": "doc_007",
+    "scenic_area": "故宫"
+  },
+  {
+    "entity": "轮椅",
+    "type": "TRANSPORT",
+    "doc_id": "doc_007",
+    "scenic_area": "故宫"
+  },
+  {
+    "entity": "无障碍通道",
+    "type": "TRANSPORT",
+    "doc_id": "doc_007",
+    "scenic_area": "故宫"
+  },
+  {
+    "entity": "御花园",
+    "type": "POI",
+    "doc_id": "doc_007",
+    "scenic_area": "故宫"
+  },
+  {
+    "entity": "一天",
+    "type": "TIME",
+    "doc_id": "doc_007",
+    "scenic_area": "故宫"
+  },
+  {
+    "entity": "断桥残雪",
+    "type": "POI",
+    "doc_id": "doc_008",
+    "scenic_area": "西湖"
+  },
+  {
+    "entity": "白堤",
+    "type": "POI",
+    "doc_id": "doc_008",
+    "scenic_area": "西湖"
+  },
+  {
+    "entity": "平湖秋月",
+    "type": "POI",
+    "doc_id": "doc_008",
+    "scenic_area": "西湖"
+  },
+  {
+    "entity": "孤山",
+    "type": "POI",
+    "doc_id": "doc_008",
+    "scenic_area": "西湖"
+  },
+  {
+    "entity": "曲院风荷",
+    "type": "POI",
+    "doc_id": "doc_008",
+    "scenic_area": "西湖"
+  },
+  {
+    "entity": "苏堤春晓",
+    "type": "POI",
+    "doc_id": "doc_008",
+    "scenic_area": "西湖"
+  },
+  {
+    "entity": "楼外楼",
+    "type": "POI",
+    "doc_id": "doc_008",
+    "scenic_area": "西湖"
+  },
+  {
+    "entity": "三潭印月",
+    "type": "POI",
+    "doc_id": "doc_008",
+    "scenic_area": "西湖"
+  },
+  {
+    "entity": "骑行",
+    "type": "TRANSPORT",
+    "doc_id": "doc_008",
+    "scenic_area": "西湖"
+  },
+  {
+    "entity": "乘船",
+    "type": "TRANSPORT",
+    "doc_id": "doc_008",
+    "scenic_area": "西湖"
+  },
+  {
+    "entity": "上午",
+    "type": "TIME",
+    "doc_id": "doc_008",
+    "scenic_area": "西湖"
+  },
+  {
+    "entity": "中午",
+    "type": "TIME",
+    "doc_id": "doc_008",
+    "scenic_area": "西湖"
+  },
+  {
+    "entity": "下午",
+    "type": "TIME",
+    "doc_id": "doc_008",
+    "scenic_area": "西湖"
+  },
+  {
+    "entity": "苏堤",
+    "type": "POI",
+    "doc_id": "doc_009",
+    "scenic_area": "西湖"
+  },
+  {
+    "entity": "雷峰塔",
+    "type": "POI",
+    "doc_id": "doc_009",
+    "scenic_area": "西湖"
+  },
+  {
+    "entity": "断桥",
+    "type": "POI",
+    "doc_id": "doc_009",
+    "scenic_area": "西湖"
+  },
+  {
+    "entity": "步行",
+    "type": "TRANSPORT",
+    "doc_id": "doc_009",
+    "scenic_area": "西湖"
+  },
+  {
+    "entity": "春天",
+    "type": "TIME",
+    "doc_id": "doc_009",
+    "scenic_area": "西湖"
+  },
+  {
+    "entity": "夏天傍晚",
+    "type": "TIME",
+    "doc_id": "doc_009",
+    "scenic_area": "西湖"
+  },
+  {
+    "entity": "五点多钟",
+    "type": "TIME",
+    "doc_id": "doc_009",
+    "scenic_area": "西湖"
+  },
+  {
+    "entity": "早上8点前",
+    "type": "TIME",
+    "doc_id": "doc_009",
+    "scenic_area": "西湖"
+  },
+  {
+    "entity": "平湖秋月",
+    "type": "POI",
+    "doc_id": "doc_010",
+    "scenic_area": "西湖"
+  },
+  {
+    "entity": "秋天",
+    "type": "TIME",
+    "doc_id": "doc_010",
+    "scenic_area": "西湖"
+  },
+  {
+    "entity": "冬天",
+    "type": "TIME",
+    "doc_id": "doc_010",
+    "scenic_area": "西湖"
+  },
+  {
+    "entity": "断桥残雪",
+    "type": "POI",
+    "doc_id": "doc_010",
+    "scenic_area": "西湖"
+  },
+  {
+    "entity": "花港观鱼",
+    "type": "POI",
+    "doc_id": "doc_010",
+    "scenic_area": "西湖"
+  },
+  {
+    "entity": "前山",
+    "type": "POI",
+    "doc_id": "doc_011",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "迎客松",
+    "type": "POI",
+    "doc_id": "doc_011",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "莲花峰",
+    "type": "POI",
+    "doc_id": "doc_011",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "山顶",
+    "type": "POI",
+    "doc_id": "doc_011",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "后山",
+    "type": "POI",
+    "doc_id": "doc_011",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "西海大峡谷",
+    "type": "POI",
+    "doc_id": "doc_011",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "夜宿",
+    "type": "TRANSPORT",
+    "doc_id": "doc_011",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "下山",
+    "type": "TRANSPORT",
+    "doc_id": "doc_011",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "夜行",
+    "type": "TRANSPORT",
+    "doc_id": "doc_011",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "第一天",
+    "type": "TIME",
+    "doc_id": "doc_011",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "第二天",
+    "type": "TIME",
+    "doc_id": "doc_011",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "早起",
+    "type": "TIME",
+    "doc_id": "doc_011",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "早六点",
+    "type": "TIME",
+    "doc_id": "doc_011",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "晚六点",
+    "type": "TIME",
+    "doc_id": "doc_011",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "火车",
+    "type": "TRANSPORT",
+    "doc_id": "doc_012",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "一天两夜",
+    "type": "TIME",
+    "doc_id": "doc_012",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "前山",
+    "type": "POI",
+    "doc_id": "doc_012",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "后山",
+    "type": "POI",
+    "doc_id": "doc_012",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "缆车",
+    "type": "TRANSPORT",
+    "doc_id": "doc_012",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "缆车",
+    "type": "TRANSPORT",
+    "doc_id": "doc_012",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "山下",
+    "type": "POI",
+    "doc_id": "doc_012",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "山上",
+    "type": "POI",
+    "doc_id": "doc_012",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "早上六点",
+    "type": "TIME",
+    "doc_id": "doc_013",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "售票处",
+    "type": "POI",
+    "doc_id": "doc_013",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "公交总站",
+    "type": "POI",
+    "doc_id": "doc_013",
+    "scenic_area": "黄山"
+  },
+  {
+    "entity": "迎客松",
+    "type": "POI",
+    "doc_id": "doc_013",
+    "scenic_area": "黄山"
   }
 ]

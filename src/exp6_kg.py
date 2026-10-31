@@ -36,20 +36,23 @@ G = nx.DiGraph()
 scenic = "故宫"
 G.add_node(scenic, type="景区")
 
-# 融合实验三：时间节点与景点节点
-for time_slot, pois in route_data.items():
-    G.add_node(time_slot, type="时间")
-    # 景区包含时间段
-    G.add_edge(scenic, time_slot, relation="包含时间")
+# 融合实验三：遍历多个景区的路线结构
+for scenic_name, time_dict in route_data.items():
+    # 添加景区节点
+    G.add_node(scenic_name, type="景区")
     
-    for i, poi in enumerate(pois):
-        G.add_node(poi, type="景点/活动")
-        # 时间段包含景点
-        G.add_edge(time_slot, poi, relation="发生于")
+    for time_slot, pois in time_dict.items():
+        time_node_name = f"{scenic_name}_{time_slot}" # 区分不同景区的上午
+        G.add_node(time_node_name, type="时间")
+        G.add_edge(scenic_name, time_node_name, relation="包含时间")
         
-        # 如果是指定序列，增加前后顺序边
-        if i > 0:
-            G.add_edge(pois[i-1], poi, relation="游览顺序")
+        for i, poi in enumerate(pois):
+            G.add_node(poi, type="景点/活动")
+            G.add_edge(time_node_name, poi, relation="发生于")
+            
+            # 如果是指定序列，增加前后顺序边
+            if i > 0:
+                G.add_edge(pois[i-1], poi, relation="游览顺序")
 
 # 融合实验五：条件与建议
 for item in cond_data:
@@ -75,10 +78,10 @@ pd.DataFrame(edges_data).to_csv("outputs/exp6_edges.csv", index=False, encoding=
 print("图谱结构已导出至 outputs/exp6_nodes.csv 和 exp6_edges.csv")
 
 # ================= 4. 图谱可视化 =================
-plt.figure(figsize=(12, 8))
+plt.figure(figsize=(16, 10)) # 1. 把画布调大，字才不会挤在一起
 
-# 布局算法（spring_layout 会让节点像弹簧一样均匀散开）
-pos = nx.spring_layout(G, k=1.2, seed=42)
+# 布局算法（k值调大一点，让节点散开）
+pos = nx.spring_layout(G, k=2.0, seed=42)
 
 # 按节点类型给不同颜色
 node_colors = []
@@ -90,11 +93,11 @@ for n, d in G.nodes(data=True):
     else: node_colors.append("#A2D2FF")                     # 浅蓝色
 
 # 画节点
-nx.draw_networkx_nodes(G, pos, node_color=node_colors, node_size=2000, alpha=0.9)
+nx.draw_networkx_nodes(G, pos, node_color=node_colors, node_size=2500, alpha=0.9)
 # 画边
-nx.draw_networkx_edges(G, pos, edge_color="gray", arrows=True, arrowsize=20, width=2)
+nx.draw_networkx_edges(G, pos, edge_color="gray", arrows=True, arrowsize=20, width=1.5, alpha=0.6)
 # 画文字标签
-nx.draw_networkx_labels(G, pos, font_size=10, font_family="SimHei")
+nx.draw_networkx_labels(G, pos, font_size=9, font_family="SimHei")
 
 # 添加图例
 legend_elements = [
@@ -105,7 +108,8 @@ legend_elements = [
 ]
 plt.legend(handles=legend_elements, loc="upper right")
 
-plt.title("故宫程序性知识图谱（NetworkX 构建）", fontsize=16)
+# 2. 修改标题，体现多源融合！
+plt.title("多景区程序性知识图谱（NetworkX 构建）", fontsize=18)
 plt.axis("off")
 plt.tight_layout()
 

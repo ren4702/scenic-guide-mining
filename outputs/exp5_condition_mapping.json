@@ -1,42 +1,42 @@
 [
   {
     "condition_id":"c_001",
-    "condition_type":"天气",
-    "condition_text":"遇到下雨天气",
-    "suggestion_text":"前往故宫室内的珍宝馆参观",
-    "visitor_type":"通用",
-    "source":"混合文本"
+    "scenic_area":"黄山",
+    "condition_type":"通用",
+    "condition_text":"有随身带的大件行李",
+    "suggestion_text":"找一家酒店寄存，一天收费10元",
+    "visitor_type":"通用"
   },
   {
     "condition_id":"c_002",
-    "condition_type":"人员",
-    "condition_text":"带老人同行",
-    "suggestion_text":"租借轮椅并使用无障碍通道",
-    "visitor_type":"特殊人群",
-    "source":"混合文本"
+    "scenic_area":"故宫",
+    "condition_type":"天气",
+    "condition_text":"遇到下雨天气",
+    "suggestion_text":"前往故宫室内的珍宝馆参观",
+    "visitor_type":"天气"
   },
   {
     "condition_id":"c_003",
-    "condition_type":"时间\/客流",
-    "condition_text":"你想避开人流",
-    "suggestion_text":"在早上8点前从午门进入",
-    "visitor_type":"通用",
-    "source":"混合文本"
+    "scenic_area":"故宫",
+    "condition_type":"特殊人群",
+    "condition_text":"带老人同行",
+    "suggestion_text":"租借轮椅并使用无障碍通道",
+    "visitor_type":"特殊人群"
   },
   {
     "condition_id":"c_004",
-    "condition_type":"人员",
-    "condition_text":"带孩子游玩",
-    "suggestion_text":"去御花园休息",
-    "visitor_type":"特殊人群",
-    "source":"混合文本"
+    "scenic_area":"西湖",
+    "condition_type":"通用",
+    "condition_text":"你想避开人流",
+    "suggestion_text":"在早上8点前到断桥",
+    "visitor_type":"通用"
   },
   {
     "condition_id":"c_005",
-    "condition_type":"身体状况",
-    "condition_text":"体力不佳",
-    "suggestion_text":"乘坐观光车",
-    "visitor_type":"通用",
-    "source":"混合文本"
+    "scenic_area":"黄山",
+    "condition_type":"通用",
+    "condition_text":"你想省钱",
+    "suggestion_text":"在售票处等旅游团带一张团体票给你",
+    "visitor_type":"通用"
   }
 ]
